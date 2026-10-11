@@ -52,7 +52,7 @@ var CHAPTERS = [
     id: 'C1', n: 1, name: 'الصفحة الأولى', en: 'The First Page', weeks: [1, 2],
     course: 'Creative Copywriter Course · Section 1 (1.1 – 1.3)',
     desc: 'نبدأ من أنتِ: لماذا تكتبين، ولمن، وبأي صوت. في نهاية هذا الفصل يكون لـ«ممكن» دليلُ نبرةٍ مكتوب بقلمك — مرجعٌ يعود إليه الفريق كلّه.',
-    read: [{ b: 'tools' }, { b: 'steal' }],
+    read: [{ b: 'tools' }, { b: 'edit' }],
     tasks: [
       { id: 'c1a', c: 'ccc', k: 'mission',  w: 1, t: 'انطلاق: شاهدي «Onboarding Guide» وافتحي دفتر الدورة ccc-workbook.pdf واكتبي هدفك الشخصي من هذا الموسم في سطرين', sub: 1 },
       { id: 'c1b', c: 'ccc', k: 'lesson',   w: 1, t: '1.1 Story Time — قصة المدرّبة وكيف أصبحت كاتبة إعلانية' },
@@ -69,7 +69,7 @@ var CHAPTERS = [
     id: 'C2', n: 2, name: 'المسوّدة', en: 'The Draft', weeks: [3, 4],
     course: 'Creative Copywriter Course · Section 1 (1.4 – 1.5) + Workshop',
     desc: 'من الصفحة البيضاء إلى نصٍّ يعمل: العملية الإبداعية، ثم «البريف» — كيف تكتبين إعلانًا، ورسالة بريد، وعنوانًا رئيسيًا… كلها على مشاريع ممكن الحقيقية لا على عميلٍ متخيَّل.',
-    read: [{ b: 'digital' }, { b: 'stick' }],
+    read: [{ b: 'digital' }, { b: 'narrative' }],
     tasks: [
       { id: 'c2a', c: 'ccc', k: 'lesson',   w: 3, t: '1.4 Creative Process — كيف تُطلقين الإبداع ثم تروّضينه' },
       { id: 'c2b', c: 'ccc', k: 'practice', w: 3, m: 1, t: 'جرّبي العملية الإبداعية على منشور توعوي حقيقي: 20 عنوانًا سريعًا قبل أن تختاري واحدًا', sub: 1 },
@@ -86,7 +86,7 @@ var CHAPTERS = [
     id: 'C3', n: 3, name: 'البصيرة', en: 'The Insight', weeks: [5, 6],
     course: 'Strategy Finishing School · 01 – 03',
     desc: 'الكاتبة الإعلانية الجيدة لا تبدأ بالكلمات بل بالناس. هنا تتعلّمين البحث، وكيف تلتقطين «البصيرة» — تلك الحقيقة الإنسانية الصغيرة التي تجعل الرسالة التوعوية تصل.',
-    read: [{ b: 'human' }, { b: 'kahneman' }],
+    read: [{ b: 'human' }, { b: 'misinfo' }],
     tasks: [
       { id: 'c3a', c: 'sfs', k: 'mission',  w: 5, t: 'تجهيز مجلد Strategy Finishing School وتصفّح الوحدات (بعد اكتمال التحميل)' },
       { id: 'c3b', c: 'sfs', k: 'lesson',   w: 5, t: '01 · Strategy Fundamentals — ما الاستراتيجية أصلًا؟' },
@@ -102,7 +102,7 @@ var CHAPTERS = [
     id: 'C4', n: 4, name: 'الموجز', en: 'The Brief', weeks: [7, 8],
     course: 'Strategy Finishing School · 04 · 14 · 05 · 06',
     desc: 'تحويل البصيرة إلى «موجز إبداعي» يفهمه المصمّم والمونتير والشريك في صفحةٍ واحدة، ثم إلى خطة تواصل: ماذا نقول، وأين، ومتى. وفي آخر الفصل… أول عرضٍ لكِ أمام جمهور صغير.',
-    read: [{ b: 'storybrand' }, { b: 'why' }, { b: 'opinion' }],
+    read: [{ b: 'opinion' }, { b: 'factcheck' }],
     tasks: [
       { id: 'c4a', c: 'sfs', k: 'lesson',   w: 7, t: '04 · Briefing — أساسيات كتابة الموجز' },
       { id: 'c4b', c: 'sfs', k: 'lesson',   w: 7, t: '14 · Creative Briefing — الموجز الإبداعي (استعيني بقالب 17 · Planners Template)' },
@@ -118,7 +118,7 @@ var CHAPTERS = [
     id: 'C5', n: 5, name: 'الملف', en: 'The Portfolio', weeks: [9, 10],
     course: 'Creative Copywriter Course · Section 2 + Strategy School 09 · 11',
     desc: 'حان وقت أن تري أعمالك مجتمعةً: ملفُّ أعمالٍ أول، ونبذةٌ تعريفية بقلمك، ومهاراتٌ متقدّمة في كتابة العلامة. ومن مدرسة الاستراتيجية: كيف تقنعين الآخرين بفكرتك بلباقة.',
-    read: [{ b: 'show' }, { b: 'edit' }],
+    read: [{ b: 'mojo' }, { b: 'ethics' }],
     tasks: [
       { id: 'c5a', c: 'ccc', k: 'lesson',   w: 9,  t: '2.1 What Goes Into a Copy Portfolio' },
       { id: 'c5b', c: 'ccc', k: 'lesson',   w: 9,  t: '2.2 How to Pitch Yourself' },
@@ -134,7 +134,7 @@ var CHAPTERS = [
     id: 'C6', n: 6, name: 'على المنصّة', en: 'On Stage', weeks: [11, 12],
     course: 'المشروع الختامي + Creative Copywriter Course · Section 3 (مختارات)',
     desc: 'كل ما تعلّمتِه في عملٍ واحد: حملة توعوية حقيقية من البصيرة إلى النص — ثم تقفين بها أمام فريق المركز الإعلامي كمتحدّثةٍ في مؤتمر. هذا هو الفصل الذي كانت دانية الصغيرة تنتظره.',
-    read: [{ b: 'body' }, { b: 'khataba' }, { b: 'interviews' }],
+    read: [{ b: 'body' }, { b: 'voice' }, { b: 'tvstory' }],
     tasks: [
       { id: 'c6a', c: 'ccc', k: 'lesson',   w: 11, t: '3.2 How to Pitch Clients + 3.5 Dealing With Clients — «عملاؤك» هنا: الشركاء والمانحون وفرق المشاريع' },
       { id: 'c6b', c: 'ccc', k: 'lesson',   w: 11, t: 'Workshop: Client Pitch Live Demo — عرضٌ حيّ لتقديم فكرة' },
@@ -148,80 +148,57 @@ var CHAPTERS = [
 
 /* ---------- the library ---------- */
 var SHELVES = [
-  { id: 'free', ar: 'اقرئي الآن — أدلّة مجانية كاملة (PDF)', en: 'Al Jazeera Media Institute · Free' },
-  { id: 'own',  ar: 'كتبٌ عربية مرافقة للدورتين', en: 'Companion Books · Arabic' },
-  { id: 'kit',  ar: 'مواد دورتك — على OneDrive ممكن', en: 'Your Course Kit · OneDrive' }
+  { id: 'free', ar: 'الأدلّة الأساسية — اضغطي واقرئي', en: 'Core Guides · PDF' },
+  { id: 'own',  ar: 'أدلّة مرافقة — للتعمّق', en: 'Companion Guides · PDF' },
+  { id: 'kit',  ar: 'مواد دورتك', en: 'Your Course Kit · PDF' }
 ];
 
+var ODV = 'https://moomken-my.sharepoint.com/personal/a_abukhutwah_moomken_org/_layouts/15/onedrive.aspx?parent=%2Fpersonal%2Fa_abukhutwah_moomken_org%2FDocuments%2FDania%20Library&id=%2Fpersonal%2Fa_abukhutwah_moomken_org%2FDocuments%2FDania%20Library%2F';
+function od(name) { return ODV + encodeURIComponent(name); }
+
+/* every book on the shelf opens straight to a PDF:
+   shelf 1 + 3 → copies in the shared «Dania Library» OneDrive folder
+   shelf 2     → free official PDFs published by the Al Jazeera Media Institute */
 var BOOKS = [
-  /* free PDFs — Al Jazeera Media Institute publications */
+  /* shelf 1 — core guides (OneDrive) */
   { id: 'digital', s: 'free', t: 'الكتابة لمنصات الإعلام الرقمي', a: 'معهد الجزيرة للإعلام · 2023', c: '#1F3A5F', h: 222, w: 50, ch: 2,
-    d: 'كيف تختلف الكتابة لكل منصة رقمية: العناوين، الإيجاز، والجمهور الذي يقرأ على الهاتف.',
-    url: AJP + '2023/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D9%83%D8%AA%D8%A7%D8%A8%D8%A9%20%D9%84%D9%85%D9%86%D8%B5%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A.pdf', pdf: 1 },
+    d: 'كيف تختلف الكتابة لكل منصة رقمية: العناوين، الإيجاز، والجمهور الذي يقرأ على الهاتف.', url: od('01-الكتابة-لمنصات-الإعلام-الرقمي.pdf'), pdf: 1 },
   { id: 'tools', s: 'free', t: 'أدوات كتابة القصة', a: 'معهد الجزيرة للإعلام · 2024', c: '#B4552F', h: 200, w: 46, ch: 1,
-    d: 'صندوق أدوات السرد: البداية، الشخصية، التفاصيل، والإيقاع — بلغة عملية.',
-    url: AJP + '2024/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA%20%D9%83%D8%AA%D8%A7%D8%A8%D8%A9%20%D8%A7%D9%84%D9%82%D8%B5%D8%A9.pdf', pdf: 1 },
+    d: 'صندوق أدوات السرد: البداية، الشخصية، التفاصيل، والإيقاع — بلغة عملية.', url: od('02-أدوات-كتابة-القصة.pdf'), pdf: 1 },
   { id: 'human', s: 'free', t: 'دليل إلى القصة الصحفية الإنسانية', a: 'معهد الجزيرة للإعلام · 2025', c: '#2F5D50', h: 232, w: 54, ch: 3,
-    d: 'كيف تُروى قضايا الناس بكرامةٍ وتعاطف — قلب الكتابة التوعوية.',
-    url: AJP + '2025/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A5%D9%84%D9%89%20%D8%A7%D9%84%D9%82%D8%B5%D9%91%D8%A9%20%D8%A7%D9%84%D8%B5%D8%AD%D9%81%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A5%D9%86%D8%B3%D8%A7%D9%86%D9%8A%D9%91%D8%A9%20-%20Final%20-%20web.pdf', pdf: 1 },
-  { id: 'edit', s: 'free', t: 'دليل إلى التحرير الصحفي', a: 'معهد الجزيرة للإعلام · 2025', c: '#C8962E', fg: '#2A1B05', h: 214, w: 48, ch: 5,
-    d: 'التحرير بعد الكتابة: كيف تُصقَل الجملة ويُحذف الزائد قبل النشر.',
-    url: AJP + '2025/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B5%D8%AD%D9%81%D9%8A%20web.pdf', pdf: 1 },
+    d: 'كيف تُروى قضايا الناس بكرامةٍ وتعاطف — قلب الكتابة التوعوية.', url: od('03-دليل-إلى-القصة-الصحفية-الإنسانية.pdf'), pdf: 1 },
+  { id: 'edit', s: 'free', t: 'دليل إلى التحرير الصحفي', a: 'معهد الجزيرة للإعلام · 2025', c: '#C8962E', fg: '#2A1B05', h: 214, w: 48, ch: 1,
+    d: 'التحرير بعد الكتابة: كيف تُصقَل الجملة ويُحذف الزائد قبل النشر.', url: od('04-دليل-إلى-التحرير-الصحفي.pdf'), pdf: 1 },
   { id: 'opinion', s: 'free', t: 'دليل إلى كتابة مقال الرأي', a: 'معهد الجزيرة للإعلام · 2024', c: '#5B3557', h: 206, w: 46, ch: 4,
-    d: 'فنّ الإقناع بالحجة: كيف تبنين رأيًا يقنع القارئ — وهي مهارة الكاتبة الإعلانية الأولى.',
-    url: AJP + '2024/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A5%D9%84%D9%89%20%D9%83%D8%AA%D8%A7%D8%A8%D8%A9%20%D9%85%D9%82%D8%A7%D9%84%20%D8%A7%D9%84%D8%B1%D8%A3%D9%8A.pdf', pdf: 1 },
-  { id: 'misinfo', s: 'free', t: 'دور الصحافة التفسيرية في محاربة المعلومات المضللة', a: 'معهد الجزيرة للإعلام · 2023', c: '#2B6F77', h: 238, w: 56, ch: 3, fs: 13,
-    d: 'كيف يشرح الإعلام الحقيقة ببساطة في وجه التضليل — في صميم رسالة ممكن التوعوية.',
-    url: AJP + '2023/%D8%AF%D9%88%D8%B1%20%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9%20%D8%A7%D9%84%D8%AA%D9%81%D8%B3%D9%8A%D8%B1%D9%8A%D8%A9%20%D9%81%D9%8A%20%D9%85%D8%AD%D8%A7%D8%B1%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B6%D9%84%D9%84%D8%A9.pdf', pdf: 1 },
+    d: 'فنّ الإقناع بالحجة: كيف تبنين رأيًا يقنع القارئ — وهي مهارة الكاتبة الإعلانية الأولى.', url: od('05-دليل-إلى-كتابة-مقال-الرأي.pdf'), pdf: 1 },
+  { id: 'misinfo', s: 'free', t: 'الصحافة التفسيرية ومحاربة التضليل', a: 'معهد الجزيرة للإعلام · 2023', c: '#2B6F77', h: 236, w: 54, ch: 3, fs: 13.5,
+    d: 'كيف يشرح الإعلام الحقيقة ببساطة في وجه التضليل — في صميم رسالة ممكن التوعوية.', url: od('06-الصحافة-التفسيرية-ومحاربة-التضليل.pdf'), pdf: 1 },
   { id: 'interviews', s: 'free', t: 'المقابلات الإعلامية', a: 'إستراتيجية السؤال وإدارة التفاعل · 2026', c: '#7A2E3A', h: 218, w: 50, ch: 6,
-    d: 'إدارة الحوار وطرح السؤال الصحيح — لما قلتِ إنك تريدين إتقانه: «إدارة الحوارات».',
-    url: AJP + '2026/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A5%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A6%D9%84%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%A8%D9%84%D8%A7%D8%AA.pdf', pdf: 1 },
+    d: 'إدارة الحوار وطرح السؤال الصحيح — لما قلتِ إنك تريدين إتقانه: «إدارة الحوارات».', url: od('07-المقابلات-الإعلامية.pdf'), pdf: 1 },
   { id: 'body', s: 'free', t: 'لغة الجسد في الإعلام', a: 'معهد الجزيرة للإعلام · 2026', c: '#22252B', fg: '#F2C46D', h: 196, w: 46, ch: 6, lean: 1,
-    d: 'الحضور أمام الجمهور والكاميرا: الوقفة، النظرة، اليدان — رفيقك قبل يوم «على المنصّة».',
-    url: AJP + '2026/%D9%84%D8%BA%D8%A9%20%D8%A7%D9%84%D8%AC%D9%80%D8%B3%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85.pdf', pdf: 1 },
+    d: 'الحضور أمام الجمهور والكاميرا: الوقفة، النظرة، اليدان — رفيقك قبل يوم «على المنصّة».', url: od('08-لغة-الجسد-في-الإعلام.pdf'), pdf: 1 },
 
-  /* companion books — Arabic editions (to acquire) */
-  { id: 'stick', s: 'own', t: 'أفكار وجدت لتبقى', a: 'تشيب ودان هيث', c: '#E0B23A', fg: '#2A1B05', h: 214, w: 52, ch: 2,
-    d: 'لماذا تعيش بعض الأفكار وتموت أخرى؟ ست قواعد لرسالةٍ لا تُنسى — الكتاب الأقرب لعمل الكاتبة الإعلانية.',
-    note: 'الدار العربية للعلوم · متوفر في جرير', url: 'https://www.jarir.com/arabic-books-480600.html' },
-  { id: 'storybrand', s: 'own', t: 'بناء قصة العلامة', a: 'دونالد ميلر', c: '#2E5BFF', h: 224, w: 50, ch: 4,
-    d: 'اجعلي الجمهور هو البطل والمنظمة هي المرشد — إطارٌ بسيط لكتابة رسائل أي حملة.',
-    note: 'جبل عمّان ناشرون · متوفر في جرير', url: 'https://www.jarir.com/arabic-books-606680.html' },
-  { id: 'why', s: 'own', t: 'ابدأ بـ لماذا', a: 'سايمون سينك', c: '#EADBC0', fg: '#1F2635', h: 204, w: 48, ch: 4, band: 'rgba(180,122,31,.7)',
-    d: 'الناس لا يتبعون ماذا تفعل، بل لماذا تفعله — مفتاح كتابة رسالة منظمة غير ربحية.',
-    note: 'مكتبة جرير · 2018', url: 'https://www.abjjad.com/book/1034091364368' },
-  { id: 'kahneman', s: 'own', t: 'التفكير السريع والبطيء', a: 'دانيال كانمان', c: '#3E4A5C', h: 240, w: 60, ch: 3,
-    d: 'كيف يقرّر الناس فعلًا — أساس فهم الجمهور والبصيرة في مدرسة الاستراتيجية.',
-    note: 'ترجمة شيماء طه الريدي ومحمد سعد طنطاوي · مؤسسة هنداوي', url: 'https://centrallibrary.uomosul.edu.iq/bib/20582' },
-  { id: 'story', s: 'own', t: 'القصة', a: 'روبرت ماكي', c: '#6B7A3A', h: 236, w: 58, ch: 2,
-    d: 'المادة والبنية والأسلوب — المرجع الأشهر في بناء القصة، للتعمّق متى شئتِ.',
-    note: 'ترجمة حسين عيد · المجلس الأعلى للثقافة', url: 'https://www.goodreads.com/book/show/13627312' },
-  { id: 'king', s: 'own', t: 'مسيرتي في التأليف', a: 'ستيفن كينغ', c: '#7A2E3A', h: 210, w: 46, ch: 1,
-    d: 'مذكرات كاتب عن الحرفة والعادة اليومية: اقرئي كثيرًا واكتبي كثيرًا.',
-    note: 'الدار العربية للعلوم ناشرون · 2019', url: 'https://www.abjjad.com/book/2777678277' },
-  { id: 'steal', s: 'own', t: 'اسرق مثل فنان', a: 'أوستن كليون', c: '#F4EEE2', fg: '#22252B', h: 180, w: 44, ch: 1, band: 'rgba(0,0,0,.6)',
-    d: 'عشرة أشياء عن الإبداع لم يخبرك بها أحد — كتاب صغير يُقرأ في جلستين.',
-    note: 'دار شفق · 2021', url: 'https://www.abjjad.com/book/2771845129' },
-  { id: 'show', s: 'own', t: 'انشر فنك', a: 'أوستن كليون', c: '#D9473A', h: 180, w: 42, ch: 5,
-    d: 'كيف تُظهرين عملك وتبنين حضورك — مرافقٌ مثالي لفصل «الملف».',
-    note: 'دار شفق · 2021', url: 'https://www.abjjad.com/book/2771812368' },
-  { id: 'keep', s: 'own', t: 'لا تتوقف', a: 'أوستن كليون', c: '#2B6F77', h: 180, w: 42, ch: 6,
-    d: 'عشر طرق لتظلّي مبدعة في الأيام الجيدة والسيئة — لما بعد ديسمبر.',
-    note: 'دار شفق · 2019', url: 'https://www.abjjad.com/book/2771910660' },
-  { id: 'press', s: 'own', t: 'فن الكتابة الصحفية', a: 'فاروق أبو زيد', c: '#1F2635', fg: '#F4EEE2', h: 228, w: 54, ch: 2,
-    d: 'الكتاب الكلاسيكي العربي في فنون الكتابة الصحفية — تحيةٌ لحلم «الصحفية» القديم.',
-    note: 'عالم الكتب · القاهرة', url: 'https://opac.lu.ac.ae/bib/38560' },
-  { id: 'khataba', s: 'own', t: 'فن الخطابة', a: 'أحمد محمد الحوفي', c: '#5B3557', h: 216, w: 50, ch: 6, lean: 1,
-    d: 'أصول الإلقاء والتأثير في الجمهور بالعربية — رفيق الفصل الأخير.',
-    note: 'نهضة مصر · 2001', url: 'https://lib.univ-soukahras.dz/bib/27833' },
+  /* shelf 2 — more free guides (official PDFs) */
+  { id: 'narrative', s: 'own', t: 'السرد في الصحافة', a: 'معهد الجزيرة للإعلام · 2021', c: '#E0B23A', fg: '#2A1B05', h: 214, w: 52, ch: 2,
+    d: 'كتابٌ كامل عن بناء القصة الصحفية المتأنية — المشهد، الشخصية، والتفاصيل التي تجعل القارئ يكمل.', url: AJP + '2021/%D9%83%D8%AA%D8%A7%D8%A8%20%D8%A7%D9%84%D8%B3%D8%B1%D8%AF%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9.pdf', pdf: 1 },
+  { id: 'tvstory', s: 'own', t: 'كيف تحكي القصة في التلفزيون', a: 'معهد الجزيرة للإعلام · 2022', c: '#2E5BFF', h: 226, w: 52, ch: 6,
+    d: 'كتابة السكربت والقصة المصوّرة — مباشرةً لسكربتات الفيديو التوعوية.', url: AJP + '2022/%D9%83%D9%8A%D9%81%20%D8%AA%D8%AD%D9%83%D9%8A%20%D8%A7%D9%84%D9%82%D8%B5%D8%A9%20%D9%84%D9%84%D8%AA%D9%84%D9%81%D8%B2%D9%8A%D9%88%D9%86.pdf', pdf: 1 },
+  { id: 'voice', s: 'own', t: 'الأداء الصوتي وفنونه', a: 'معهد الجزيرة للإعلام · 2021', c: '#EADBC0', fg: '#1F2635', h: 204, w: 48, ch: 6, band: 'rgba(180,122,31,.7)',
+    d: 'صوتك حين تقدّمين: النبرة، الوقفة، والإيقاع — تحضيرٌ لـ«على المنصّة».', url: AJP + '2021/%D8%A7%D9%84%D8%A3%D8%AF%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B5%D9%88%D8%AA%D9%8A%20%D9%88%D9%81%D9%86%D9%88%D9%86%D9%87%20-%20B5%20-%20Final%20-%20Web.pdf', pdf: 1 },
+  { id: 'tvjourn', s: 'own', t: 'الصحافة التلفزيونية في تجربة الجزيرة', a: 'معهد الجزيرة للإعلام · 2026', c: '#3E4A5C', h: 240, w: 58, ch: 6, fs: 13.5,
+    d: 'من داخل غرفة الأخبار والاستوديو — لحلم الوقوف أمام الكاميرا.', url: AJP + '2026/%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9%20%D8%A7%D9%84%D8%AA%D9%84%D9%81%D8%B2%D9%8A%D9%88%D9%86%D9%8A%D8%A9%20%D9%81%D9%8A%20%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9%20%D8%A7%D9%84%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9.pdf', pdf: 1 },
+  { id: 'mojo', s: 'own', t: 'دليل صحافة الموبايل 2.0', a: 'معهد الجزيرة للإعلام · 2022', c: '#6B7A3A', h: 210, w: 48, ch: 5,
+    d: 'صناعة المحتوى كاملًا من الهاتف: فكرة، تصوير، ونشر — لما بعد النص.', url: AJP + '2022/Mobile%20Journalism%20Ar%20-%20Web%20%281%29_0.pdf', pdf: 1 },
+  { id: 'factcheck', s: 'own', t: 'دليل تدقيق التصريحات والبيانات الرسمية', a: 'معهد الجزيرة للإعلام · 2024', c: '#7A2E3A', h: 230, w: 54, ch: 4, fs: 13.5,
+    d: 'كيف تتحقّقين من الأرقام والتصريحات قبل أن تكتبي عنها — أمانة الرسالة التوعوية.', url: AJP + '2024/%D8%AF%D9%84%D9%8A%D9%84%20%D8%AA%D8%AF%D9%82%D9%8A%D9%82%20%D8%A7%D9%84%D8%AA%D8%B5%D8%B1%D9%8A%D8%AD%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%D8%A9%20.pdf', pdf: 1 },
+  { id: 'ethics', s: 'own', t: 'أخلاقيات الصحافة في العصر الرقمي', a: 'معهد الجزيرة للإعلام · 2022', c: '#1F2635', fg: '#F4EEE2', h: 222, w: 52, ch: 5, lean: 1,
+    d: 'ما يجوز وما لا يجوز حين نكتب عن الناس ونصوّرهم على المنصات الرقمية.', url: AJP + '2022/%D8%AF%D9%84%D9%8A%D9%84%20%D8%A3%D8%AE%D9%84%D8%A7%D9%82%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9%20%D8%A7%D9%84%D8%B5%D8%AD%D8%A7%D9%81%D8%A9%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B9%D8%B5%D8%B1%20%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A.pdf', pdf: 1 },
 
-  /* the course kit she already has */
+  /* shelf 3 — the course kit (OneDrive) */
   { id: 'wb', s: 'kit', t: 'Creative Copywriter Workbook', a: 'ilovecreatives', c: '#2E5BFF', h: 230, w: 62, fs: 13, lat: 1,
-    d: 'دفتر تمارين الدورة — ستحتاجينه في كل درس من القسمين 1 و2.', note: 'على OneDrive ممكن · مجلد Dania Library', url: OD + '09-Creative-Copywriter-Workbook.pdf', od: 1 },
+    d: 'دفتر تمارين الدورة — ستحتاجينه في كل درس من القسمين 1 و2.', url: od('09-Creative-Copywriter-Workbook.pdf'), pdf: 1 },
   { id: 'pv', s: 'kit', t: 'Passive Voice Cheat Sheet', a: 'ilovecreatives', c: '#F2C46D', fg: '#1F2635', h: 170, w: 44, fs: 12, lat: 1,
-    d: 'ورقة مرجعية سريعة لتجنّب المبني للمجهول — علّقيها قرب مكتبك.', note: 'على OneDrive ممكن · مجلد Dania Library', url: OD + '10-Passive-Voice-Cheat-Sheet.png', od: 1 },
-  { id: 'sfsk', s: 'kit', t: 'Strategy Finishing School', a: 'Julian Cole', c: '#6E3A50', h: 236, w: 64, fs: 13, lat: 1,
-    d: 'وحدات الاستراتيجية — نستخدم منها في هذا الموسم: 01 · 02 · 03 · 04 · 05 · 06 · 09 · 11 · 14 (+ قالب 17).', note: 'في مجلد الدورة (قيد التحميل)' }
+    d: 'ورقة مرجعية سريعة لتجنّب المبني للمجهول — علّقيها قرب مكتبك.', url: od('10-Passive-Voice-Cheat-Sheet.png'), pdf: 1 }
 ];
 
 /* ---------- free Arabic courses (Al Jazeera Media Institute e-learning) ---------- */
@@ -455,7 +432,7 @@ function renderStats(C) {
   var el = $('#stats'); if (!el) return;
   var wk = currentWeek();
   var cells = [
-    { c: 's1', v: C.done + '/' + C.total, l: 'صفحة منشورة' },
+    { c: 's1', v: C.done + '/' + C.total, l: 'مهمة مُنجَزة' },
     { c: 's2', v: C.lit + '/6', l: 'أضواء مُشعَلة' },
     { c: 's3', v: C.pending, l: 'قيد المراجعة' },
     { c: 's4', v: wk === 0 ? '—' : wk > 12 ? '✓' : wk + '/12', l: 'الأسبوع' }
@@ -592,7 +569,7 @@ function renderChapters(C) {
 
     var reads = (ch.read || []).map(function (r) {
       var b = bookById(r.b); if (!b) return '';
-      return '<a class="read-chip" href="#libSec" data-book="' + b.id + '">' + (b.pdf ? '📄' : '📚') + ' ' + esc(b.t) + (b.pdf ? ' <small>PDF مجاني</small>' : '') + '</a>';
+      return '<a class="read-chip" href="#libSec" data-book="' + b.id + '">' + '📄 ' + esc(b.t) + ' <small>PDF</small>' + '</a>';
     }).join('');
 
     var tasks = ch.tasks.map(function (t) {
@@ -622,7 +599,7 @@ function renderChapters(C) {
           (t.url ? '<a class="t-link" href="' + esc(t.url) + '" target="_blank" rel="noopener">افتحي الدورة المجانية ↗</a>' : '') +
           (safeUrl(link) ? '<a class="t-link" href="' + esc(safeUrl(link)) + '" target="_blank" rel="noopener">📎 العمل المرفق</a>' : '') +
           '</div>' + sub + '</div>' +
-        '<div class="t-act"><span class="t-state st-' + st + '">' + (st === 'done' ? 'نُشِر ✦' : st === 'pending' ? 'قيد المراجعة' : 'مسوّدة') + '</span>' + acts + '</div>' +
+        '<div class="t-act"><span class="t-state st-' + st + '">' + (st === 'done' ? 'تمّ ✦' : st === 'pending' ? 'قيد المراجعة' : 'لم تبدأ') + '</span>' + acts + '</div>' +
       '</div>';
     }).join('');
 
@@ -685,7 +662,7 @@ function bindTaskButtons(root) {
       ripple(b, e);
       var id = b.getAttribute('data-task'), to = b.getAttribute('data-to');
       if (to === 'done') { burst(b, 22); happy(); }
-      else if (to === 'pending') { burst(b, 10); toast('أحسنتِ! ✍️ الصفحة الآن قيد المراجعة — بانتظار اعتماد المشرف'); }
+      else if (to === 'pending') { burst(b, 10); toast('أحسنتِ! ✍️ المهمة الآن قيد المراجعة — بانتظار اعتماد المشرف'); }
       setStatus(id, to);
     });
   });
@@ -707,7 +684,7 @@ function renderManager(C) {
       '<button class="btn btn-ghost-l btn-xs" data-task="' + p.t.id + '" data-to="todo">إرجاع</button></div>';
   }).join('') : '<div class="mgr-empty">لا شيء قيد المراجعة حاليًا ✦</div>';
   el.innerHTML = '<h3>لوحة المشرف</h3>' +
-    '<p class="mgr-lead">' + (pend.length ? 'لديك ' + pend.length + ' صفحة قيد المراجعة.' : 'كل الصفحات معتمدة — الأمور على أتمّ وجه.') +
+    '<p class="mgr-lead">' + (pend.length ? 'لديك ' + pend.length + ' مهمة قيد المراجعة.' : 'كل المهام معتمدة — الأمور على أتمّ وجه.') +
     ' الإنجاز الكلي: ' + C.pct + '% · الأسبوع ' + Math.max(1, Math.min(12, currentWeek())) + ' من 12.</p>' +
     '<div class="mgr-list">' + list + '</div>';
   bindTaskButtons(el);
@@ -739,9 +716,9 @@ function renderFinale(C) {
     '<div class="env">' + envelopeSVG(open) + '</div>' +
     (open
       ? '<h3>اكتمل الكتاب — وانكسر الختم!</h3><p>ستة فصول، اثنا عشر أسبوعًا، وحملةٌ قدّمتِها على المنصّة. ما كان في المظروف صار لكِ — مرّي على المكتب ✦</p>'
-      : '<h3>في آخر الكتاب… مظروفٌ مختوم</h3><p>ما بداخله يبقى سرًّا حتى تُطوى الصفحة الأخيرة. كلُّ صفحةٍ تُنشر تقرّب لحظة كسر الختم — وحين يكتمل الفصل السادس، يُفتح باسمك.</p>') +
+      : '<h3>في آخر الكتاب… مظروفٌ مختوم</h3><p>ما بداخله يبقى سرًّا حتى تُطوى الصفحة الأخيرة. كلُّ مهمةٍ تُنجَز تقرّب لحظة كسر الختم — وحين يكتمل الفصل السادس، يُفتح باسمك.</p>') +
     '<div class="fin-meter"><i style="width:' + C.pct + '%"></i></div>' +
-    '<div class="fin-sub">' + C.done + ' / ' + C.total + ' صفحة · ' + (open ? 'اكتمل' : 'متبقٍّ ' + daysLeft + ' يومًا حتى 31 ديسمبر') + '</div>' +
+    '<div class="fin-sub">' + C.done + ' / ' + C.total + ' مهمة · ' + (open ? 'اكتمل' : 'متبقٍّ ' + daysLeft + ' يومًا حتى 31 ديسمبر') + '</div>' +
     (S.role === 'manager' ? '<div class="fin-mgr">🔒 <b>للمشرف فقط:</b> ما في المظروف من اختيارك — جهّزه قبل يوم «على المنصّة» (الأسبوع 12). يُفتح المظروف تلقائيًا عند اعتماد آخر مهمة، ودانية لا ترى هذه الملاحظة.</div>' : '');
 }
 
@@ -762,7 +739,7 @@ function renderLibrary() {
         ' style="--c:' + b.c + ';--h:' + b.h + 'px;--w:' + b.w + 'px' + (b.fg ? ';--fg:' + b.fg : '') + (b.fs ? ';--fs:' + b.fs + 'px' : '') + (b.band ? ';--band:' + b.band : '') + '"' +
         ' aria-label="' + esc(b.t + ' — ' + b.a) + '">' +
         (b.pdf ? '<span class="pdf">PDF</span>' : '') +
-        '<span class="sp-ic">' + (b.pdf ? '✦' : b.s === 'kit' ? '◆' : '❖') + '</span>' +
+        '<span class="sp-ic">' + (b.s === 'kit' ? '◆' : b.s === 'own' ? '❖' : '✦') + '</span>' +
         '<span class="sp-t"' + (b.lat ? ' style="font-family:Gotham;font-weight:700;writing-mode:vertical-rl;transform:rotate(180deg)"' : '') + '>' + esc(b.t) + '</span>' +
         '<span class="sp-a">' + esc(b.a.split('·')[0]) + '</span>' +
       '</' + tag + '>';
@@ -794,15 +771,15 @@ function peekBook(id, mark) {
   if (mark) { var n = document.querySelector('[data-bk="' + id + '"]'); if (n) { n.classList.add('peek'); n.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' }); } }
   var ch = b.ch ? CHAPTERS.filter(function (c) { return c.n === b.ch && !c.prologue; })[0] : null;
   var action = b.url
-    ? '<a class="btn ' + (b.pdf ? 'btn-gold' : 'btn-ink') + ' btn-sm" href="' + esc(b.url) + '" target="_blank" rel="noopener">' + (b.pdf ? '📖 اقرئي الآن (PDF)' : b.od ? '📁 افتحيه من OneDrive' : '🔎 صفحة الكتاب') + '</a>'
+    ? '<a class="btn ' + (b.pdf ? 'btn-gold' : 'btn-ink') + ' btn-sm" href="' + esc(b.url) + '" target="_blank" rel="noopener">' + '📖 اقرئي الآن (PDF)' + '</a>'
     : '<span class="tag tag-kind">' + esc(b.note || '') + '</span>';
   $('#bookPeek').innerHTML =
     '<div class="peek-card">' +
       '<div class="peek-cover" style="--c:' + b.c + ';--fg:' + (b.fg || '#fff') + '">' + esc(b.t) + '<small>' + esc(b.a) + '</small></div>' +
-      '<div><h4>' + esc(b.t) + '</h4><div class="pa">' + esc(b.a) + (b.note && b.url ? ' · ' + esc(b.note) : '') + '</div>' +
+      '<div><h4>' + esc(b.t) + '</h4><div class="pa">' + esc(b.a) + '</div>' +
       '<p>' + esc(b.d) + '</p>' +
       '<div class="pk">' + action + (ch ? '<span class="tag tag-ar">رفيق الفصل ' + ch.n + ' · ' + esc(ch.name) + '</span>' : '') +
-        (b.pdf ? '<span class="tag tag-kind">مجاني · معهد الجزيرة للإعلام</span>' : '') + '</div></div>' +
+        (b.s !== 'kit' ? '<span class="tag tag-kind">مجاني · معهد الجزيرة للإعلام</span>' : '') + '</div></div>' +
     '</div>';
 }
 
@@ -875,7 +852,7 @@ function celebrate(ch, C) {
     '<div class="cele-lamp">' + lampSVG(true).replace('class="lamp-body"', 'style="width:84px;height:94px"') + '</div>' +
     '<h2>' + (last ? 'اكتمل الكتاب يا دانية! 🎙️' : 'الفصل ' + ch.n + ' اكتمل ✦') + '</h2>' +
     '<p>' + (last ? 'أُضيئت الأضواء الستة كلها — وانكسر ختم المظروف. مرّي على المكتب ✦'
-                  : '«' + esc(ch.name) + '» نُشر، وأُضيء ضوءٌ جديد على المسرح. ' + (6 - C.lit) + ' أضواء تنتظرك.') + '</p>' +
+                  : 'تمّ إنجاز «' + esc(ch.name) + '»، وأُضيء ضوءٌ جديد على المسرح. ' + (6 - C.lit) + ' أضواء تنتظرك.') + '</p>' +
     '<button class="btn btn-gold" id="celeClose">' + (last ? 'إلى المظروف ✦' : 'إلى الفصل التالي →') + '</button></div>';
   document.body.appendChild(v);
   function close() { v.remove(); if (last) { var f = $('#finaleSec'); if (f) f.scrollIntoView({ behavior: 'smooth' }); } }
