@@ -52,7 +52,7 @@ var CHAPTERS = [
     id: 'C1', n: 1, name: 'الصفحة الأولى', en: 'The First Page', weeks: [1, 2],
     course: 'Creative Copywriter Course · Section 1 (1.1 – 1.3)',
     desc: 'نبدأ من أنتِ: لماذا تكتبين، ولمن، وبأي صوت. في نهاية هذا الفصل يكون لـ«ممكن» دليلُ نبرةٍ مكتوب بقلمك — مرجعٌ يعود إليه الفريق كلّه.',
-    read: [{ b: 'tools' }, { b: 'edit' }],
+    read: [{ b: 'tools' }, { b: 'edit' }, { b: 'creativity' }],
     tasks: [
       { id: 'c1a', c: 'ccc', k: 'mission',  w: 1, t: 'انطلاق: شاهدي «Onboarding Guide» وافتحي دفتر الدورة ccc-workbook.pdf واكتبي هدفك الشخصي من هذا الموسم في سطرين', sub: 1 },
       { id: 'c1b', c: 'ccc', k: 'lesson',   w: 1, t: '1.1 Story Time — قصة المدرّبة وكيف أصبحت كاتبة إعلانية' },
@@ -69,7 +69,7 @@ var CHAPTERS = [
     id: 'C2', n: 2, name: 'المسوّدة', en: 'The Draft', weeks: [3, 4],
     course: 'Creative Copywriter Course · Section 1 (1.4 – 1.5) + Workshop',
     desc: 'من الصفحة البيضاء إلى نصٍّ يعمل: العملية الإبداعية، ثم «البريف» — كيف تكتبين إعلانًا، ورسالة بريد، وعنوانًا رئيسيًا… كلها على مشاريع ممكن الحقيقية لا على عميلٍ متخيَّل.',
-    read: [{ b: 'digital' }, { b: 'narrative' }],
+    read: [{ b: 'digital' }, { b: 'ads' }, { b: 'ideas' }, { b: 'seduce' }],
     tasks: [
       { id: 'c2a', c: 'ccc', k: 'lesson',   w: 3, t: '1.4 Creative Process — كيف تُطلقين الإبداع ثم تروّضينه' },
       { id: 'c2b', c: 'ccc', k: 'practice', w: 3, m: 1, t: 'جرّبي العملية الإبداعية على منشور توعوي حقيقي: 20 عنوانًا سريعًا قبل أن تختاري واحدًا', sub: 1 },
@@ -86,7 +86,7 @@ var CHAPTERS = [
     id: 'C3', n: 3, name: 'البصيرة', en: 'The Insight', weeks: [5, 6],
     course: 'Strategy Finishing School · 01 – 03',
     desc: 'الكاتبة الإعلانية الجيدة لا تبدأ بالكلمات بل بالناس. هنا تتعلّمين البحث، وكيف تلتقطين «البصيرة» — تلك الحقيقة الإنسانية الصغيرة التي تجعل الرسالة التوعوية تصل.',
-    read: [{ b: 'human' }, { b: 'misinfo' }],
+    read: [{ b: 'human' }, { b: 'audience' }, { b: 'behav' }, { b: 'kahneman' }],
     tasks: [
       { id: 'c3a', c: 'sfs', k: 'mission',  w: 5, t: 'تجهيز مجلد Strategy Finishing School وتصفّح الوحدات (بعد اكتمال التحميل)' },
       { id: 'c3b', c: 'sfs', k: 'lesson',   w: 5, t: '01 · Strategy Fundamentals — ما الاستراتيجية أصلًا؟' },
@@ -102,7 +102,7 @@ var CHAPTERS = [
     id: 'C4', n: 4, name: 'الموجز', en: 'The Brief', weeks: [7, 8],
     course: 'Strategy Finishing School · 04 · 14 · 05 · 06',
     desc: 'تحويل البصيرة إلى «موجز إبداعي» يفهمه المصمّم والمونتير والشريك في صفحةٍ واحدة، ثم إلى خطة تواصل: ماذا نقول، وأين، ومتى. وفي آخر الفصل… أول عرضٍ لكِ أمام جمهور صغير.',
-    read: [{ b: 'opinion' }, { b: 'factcheck' }],
+    read: [{ b: 'opinion' }, { b: 'brand' }, { b: 'marketing' }],
     tasks: [
       { id: 'c4a', c: 'sfs', k: 'lesson',   w: 7, t: '04 · Briefing — أساسيات كتابة الموجز' },
       { id: 'c4b', c: 'sfs', k: 'lesson',   w: 7, t: '14 · Creative Briefing — الموجز الإبداعي (استعيني بقالب 17 · Planners Template)' },
@@ -118,7 +118,7 @@ var CHAPTERS = [
     id: 'C5', n: 5, name: 'الملف', en: 'The Portfolio', weeks: [9, 10],
     course: 'Creative Copywriter Course · Section 2 + Strategy School 09 · 11',
     desc: 'حان وقت أن تري أعمالك مجتمعةً: ملفُّ أعمالٍ أول، ونبذةٌ تعريفية بقلمك، ومهاراتٌ متقدّمة في كتابة العلامة. ومن مدرسة الاستراتيجية: كيف تقنعين الآخرين بفكرتك بلباقة.',
-    read: [{ b: 'mojo' }, { b: 'ethics' }],
+    read: [{ b: 'narrative' }, { b: 'ethics' }],
     tasks: [
       { id: 'c5a', c: 'ccc', k: 'lesson',   w: 9,  t: '2.1 What Goes Into a Copy Portfolio' },
       { id: 'c5b', c: 'ccc', k: 'lesson',   w: 9,  t: '2.2 How to Pitch Yourself' },
@@ -149,6 +149,7 @@ var CHAPTERS = [
 /* ---------- the library ---------- */
 var SHELVES = [
   { id: 'free', ar: 'الأدلّة الأساسية — اضغطي واقرئي', en: 'Core Guides · PDF' },
+  { id: 'hin',  ar: 'كتبٌ عربية كاملة — مجانية من مؤسسة هنداوي', en: 'Hindawi Books · PDF' },
   { id: 'own',  ar: 'أدلّة مرافقة — للتعمّق', en: 'Companion Guides · PDF' },
   { id: 'kit',  ar: 'مواد دورتك', en: 'Your Course Kit · PDF' }
 ];
@@ -177,6 +178,26 @@ var BOOKS = [
     d: 'إدارة الحوار وطرح السؤال الصحيح — لما قلتِ إنك تريدين إتقانه: «إدارة الحوارات».', url: od('07-المقابلات-الإعلامية.pdf'), pdf: 1 },
   { id: 'body', s: 'free', t: 'لغة الجسد في الإعلام', a: 'معهد الجزيرة للإعلام · 2026', c: '#22252B', fg: '#F2C46D', h: 196, w: 46, ch: 6, lean: 1,
     d: 'الحضور أمام الجمهور والكاميرا: الوقفة، النظرة، اليدان — رفيقك قبل يوم «على المنصّة».', url: od('08-لغة-الجسد-في-الإعلام.pdf'), pdf: 1 },
+
+  /* shelf — Hindawi free books (OneDrive copies; free Arabic editions published legally by Hindawi Foundation) */
+  { id: 'ads', s: 'hin', t: 'الإعلانات والتصميم', a: 'ابتكار الأفكار الإبداعية في وسائل الإعلام · هنداوي', c: '#B4552F', h: 228, w: 54, ch: 2,
+    d: 'كيف تولد الفكرة الإعلانية وكيف تتحوّل إلى نصٍّ وصورة — أقرب كتاب لعمل الكاتبة الإعلانية.', url: od('11-الإعلانات-والتصميم.pdf'), pdf: 1 },
+  { id: 'seduce', s: 'hin', t: 'إغواء العقل الباطن', a: 'سيكولوجية التأثير العاطفي في الدعاية · هنداوي', c: '#5B3557', h: 214, w: 50, ch: 2,
+    d: 'لماذا تؤثر فينا بعض الرسائل دون أن ننتبه؟ علم النفس وراء الإعلان المؤثّر.', url: od('12-إغواء-العقل-الباطن.pdf'), pdf: 1 },
+  { id: 'ideas', s: 'hin', t: 'ماكينة الأفكار', a: 'كيف يمكن إنتاج الأفكار · هنداوي', c: '#E0B23A', fg: '#2A1B05', h: 200, w: 48, ch: 2,
+    d: 'طرق عملية لتوليد الأفكار بانتظام بدل انتظار الإلهام.', url: od('17-ماكينة-الأفكار.pdf'), pdf: 1 },
+  { id: 'creativity', s: 'hin', t: 'مَن قتل الإبداع؟', a: 'وكيف يمكن إعادته للحياة · هنداوي', c: '#2B6F77', h: 206, w: 48, ch: 1,
+    d: 'سبع استراتيجيات تجعلك وفريقك أكثر إبداعًا — بداية لطيفة للفصل الأول.', url: od('18-من-قتل-الإبداع.pdf'), pdf: 1 },
+  { id: 'audience', s: 'hin', t: 'الجمهور', a: 'التسويق في عالم رقمي · هنداوي', c: '#1F3A5F', h: 222, w: 52, ch: 3,
+    d: 'من هو جمهورك وكيف يتصرف على الإنترنت — أساس البحث والبصيرة.', url: od('13-الجمهور-التسويق-في-عالم-رقمي.pdf'), pdf: 1 },
+  { id: 'behav', s: 'hin', t: 'الرؤى السلوكية', a: 'هنداوي', c: '#6B7A3A', h: 190, w: 44, ch: 3,
+    d: 'كيف تُستخدم معرفة السلوك البشري لتغيير العادات — جوهر الحملات التوعوية.', url: od('14-الرؤى-السلوكية.pdf'), pdf: 1 },
+  { id: 'kahneman', s: 'hin', t: 'التفكير السريع والبطيء', a: 'دانيال كانمان · هنداوي', c: '#3E4A5C', h: 240, w: 60, ch: 3,
+    d: 'كيف يقرّر الناس فعلًا: نظام سريع حدسي ونظام بطيء متأنٍّ — مفتاح فهم الجمهور.', url: od('15-التفكير-السريع-والبطيء.pdf'), pdf: 1 },
+  { id: 'brand', s: 'hin', t: 'أسرار التعلق بالعلامات التجارية', a: 'هنداوي', c: '#7A2E3A', h: 226, w: 52, ch: 4, fs: 13.5,
+    d: 'كيف تبني علاقة حقيقية بين الجمهور والعلامة — ينفعك في فصل «الموجز» واستراتيجية العلامة.', url: od('16-أسرار-التعلق-بالعلامات-التجارية.pdf'), pdf: 1 },
+  { id: 'marketing', s: 'hin', t: 'التسويق: مقدمة قصيرة جدًّا', a: 'هنداوي', c: '#EADBC0', fg: '#1F2635', h: 196, w: 46, ch: 4, band: 'rgba(180,122,31,.7)', lean: 1,
+    d: 'خريطة سريعة لعالم التسويق كله في كتاب صغير.', url: od('19-التسويق-مقدمة-قصيرة-جدا.pdf'), pdf: 1 },
 
   /* shelf 2 — more free guides (official PDFs) */
   { id: 'narrative', s: 'own', t: 'السرد في الصحافة', a: 'معهد الجزيرة للإعلام · 2021', c: '#E0B23A', fg: '#2A1B05', h: 214, w: 52, ch: 2,
@@ -739,12 +760,13 @@ function renderLibrary() {
         ' style="--c:' + b.c + ';--h:' + b.h + 'px;--w:' + b.w + 'px' + (b.fg ? ';--fg:' + b.fg : '') + (b.fs ? ';--fs:' + b.fs + 'px' : '') + (b.band ? ';--band:' + b.band : '') + '"' +
         ' aria-label="' + esc(b.t + ' — ' + b.a) + '">' +
         (b.pdf ? '<span class="pdf">PDF</span>' : '') +
-        '<span class="sp-ic">' + (b.s === 'kit' ? '◆' : b.s === 'own' ? '❖' : '✦') + '</span>' +
+        '<span class="sp-ic">' + (b.s === 'kit' ? '◆' : b.s === 'own' ? '❖' : b.s === 'hin' ? '✧' : '✦') + '</span>' +
         '<span class="sp-t"' + (b.lat ? ' style="font-family:Gotham;font-weight:700;writing-mode:vertical-rl;transform:rotate(180deg)"' : '') + '>' + esc(b.t) + '</span>' +
-        '<span class="sp-a">' + esc(b.a.split('·')[0]) + '</span>' +
+        '<span class="sp-a">' + esc(b.s === 'hin' ? 'هنداوي' : b.a.split('·')[0]) + '</span>' +
       '</' + tag + '>';
     });
     if (sh.id === 'free') html += '<span class="plant">🪴</span>';
+    if (sh.id === 'hin') html += '<span class="plant">🕯️</span>';
     if (sh.id === 'own') html += '<span class="bookend" style="transform:scaleX(-1)"></span><span class="stack"><span class="deco">🎙️</span><i style="width:118px;background:#7A2E3A"></i><i style="width:126px;background:#2F5D50"></i><i style="width:112px;background:#C8962E"></i></span>';
     if (sh.id === 'kit') html += '<span class="plant">☕</span><span class="frame"><div><img src="assets/dania-sticker-sm.webp" alt=""></div></span><span class="stack"><span class="deco">⏳</span><i style="width:104px;background:#1F3A5F"></i><i style="width:116px;background:#B4552F"></i></span>';
     html += '</div><div class="shelf-plank"></div></div>';
@@ -779,7 +801,7 @@ function peekBook(id, mark) {
       '<div><h4>' + esc(b.t) + '</h4><div class="pa">' + esc(b.a) + '</div>' +
       '<p>' + esc(b.d) + '</p>' +
       '<div class="pk">' + action + (ch ? '<span class="tag tag-ar">رفيق الفصل ' + ch.n + ' · ' + esc(ch.name) + '</span>' : '') +
-        (b.s !== 'kit' ? '<span class="tag tag-kind">مجاني · معهد الجزيرة للإعلام</span>' : '') + '</div></div>' +
+        (b.s === 'hin' ? '<span class="tag tag-kind">مجاني · مؤسسة هنداوي</span>' : b.s !== 'kit' ? '<span class="tag tag-kind">مجاني · معهد الجزيرة للإعلام</span>' : '') + '</div></div>' +
     '</div>';
 }
 
