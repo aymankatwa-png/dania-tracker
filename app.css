@@ -50,7 +50,7 @@ a{color:inherit}
   font-family:inherit;font-weight:700;font-size:15px;border:0;cursor:pointer;
   padding:11px 20px;border-radius:999px;position:relative;overflow:hidden;
   transition:transform .2s var(--ease), box-shadow .2s, background .2s, color .2s;
-  display:inline-flex;align-items:center;gap:6px;line-height:1.2;
+  display:inline-flex;align-items:center;gap:6px;line-height:1.2;text-decoration:none;
 }
 .btn:active{transform:scale(.96)}
 .btn-gold{background:linear-gradient(135deg,#F7D58E,#E2A13A);color:#2A1B05;box-shadow:0 8px 18px -8px rgba(226,161,58,.8)}
