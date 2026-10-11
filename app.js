@@ -720,7 +720,7 @@ function envelopeSVG(open) {
     (open ? '<path d="M8 70 L155 -20 L302 70 Z" fill="#E6D2AA"/>' +
             '<rect x="40" y="10" width="230" height="120" rx="8" fill="#fff" stroke="#E6D6B8"/>' +
             '<text x="155" y="62" text-anchor="middle" font-family="Dahab" font-size="22" font-weight="900" fill="#0E1726">مبروك يا دانية ✦</text>' +
-            '<text x="155" y="92" text-anchor="middle" font-family="Dahab" font-size="14" fill="#776A55">مفاجأتك تنتظرك في المكتب</text>' : '') +
+            '<text x="155" y="92" text-anchor="middle" font-family="Dahab" font-size="14" fill="#776A55">ما بداخله ينتظرك في المكتب</text>' : '') +
     '<rect x="8" y="60" width="294" height="134" rx="12" fill="url(#envG)" stroke="#D9C49C"/>' +
     '<path d="M8 194 L155 112 L302 194" fill="#F1E3C6" stroke="#D9C49C"/>' +
     (open ? '' : '<path d="M8 62 L155 150 L302 62" fill="#F6EBD3" stroke="#D9C49C"/>' +
@@ -737,11 +737,11 @@ function renderFinale(C) {
     '<div class="promise-kicker" style="color:var(--gold)">الختام · The Finale</div>' +
     '<div class="env">' + envelopeSVG(open) + '</div>' +
     (open
-      ? '<h3>اكتمل الكتاب — والمظروف مفتوح!</h3><p>ستة فصول، اثنا عشر أسبوعًا، وحملةٌ قدّمتِها على المنصّة. مفاجأتك جاهزة — مرّي على المكتب لاستلامها ✦</p>'
-      : '<h3>مظروفٌ واحد مختوم… يُفتَح في النهاية</h3><p>لا جوائز صغيرة على الطريق — بل هديةٌ واحدة تليق بالرحلة كاملة، تُفتح حين تكتمل الفصول الستة.</p>') +
+      ? '<h3>اكتمل الكتاب — وانكسر الختم!</h3><p>ستة فصول، اثنا عشر أسبوعًا، وحملةٌ قدّمتِها على المنصّة. ما كان في المظروف صار لكِ — مرّي على المكتب ✦</p>'
+      : '<h3>في آخر الكتاب… مظروفٌ مختوم</h3><p>ما بداخله يبقى سرًّا حتى تُطوى الصفحة الأخيرة. كلُّ صفحةٍ تُنشر تقرّب لحظة كسر الختم — وحين يكتمل الفصل السادس، يُفتح باسمك.</p>') +
     '<div class="fin-meter"><i style="width:' + C.pct + '%"></i></div>' +
     '<div class="fin-sub">' + C.done + ' / ' + C.total + ' صفحة · ' + (open ? 'اكتمل' : 'متبقٍّ ' + daysLeft + ' يومًا حتى 31 ديسمبر') + '</div>' +
-    (S.role === 'manager' ? '<div class="fin-mgr">🔒 <b>للمشرف فقط:</b> الهدية الختامية من اختيارك — جهّزها قبل جلسة «على المنصّة» (الأسبوع 12). يُفتح المظروف تلقائيًا عند اعتماد آخر مهمة.</div>' : '');
+    (S.role === 'manager' ? '<div class="fin-mgr">🔒 <b>للمشرف فقط:</b> ما في المظروف من اختيارك — جهّزه قبل يوم «على المنصّة» (الأسبوع 12). يُفتح المظروف تلقائيًا عند اعتماد آخر مهمة، ودانية لا ترى هذه الملاحظة.</div>' : '');
 }
 
 /* ---------- the library ---------- */
@@ -873,7 +873,7 @@ function celebrate(ch, C) {
   v.innerHTML = '<div class="cele-card">' +
     '<div class="cele-lamp">' + lampSVG(true).replace('class="lamp-body"', 'style="width:84px;height:94px"') + '</div>' +
     '<h2>' + (last ? 'اكتمل الكتاب يا دانية! 🎙️' : 'الفصل ' + ch.n + ' اكتمل ✦') + '</h2>' +
-    '<p>' + (last ? 'أُضيئت الأضواء الستة كلها — والمظروف الختامي فُتح. مرّي على المكتب ✦'
+    '<p>' + (last ? 'أُضيئت الأضواء الستة كلها — وانكسر ختم المظروف. مرّي على المكتب ✦'
                   : '«' + esc(ch.name) + '» نُشر، وأُضيء ضوءٌ جديد على المسرح. ' + (6 - C.lit) + ' أضواء تنتظرك.') + '</p>' +
     '<button class="btn btn-gold" id="celeClose">' + (last ? 'إلى المظروف ✦' : 'إلى الفصل التالي →') + '</button></div>';
   document.body.appendChild(v);
