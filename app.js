@@ -21,6 +21,7 @@ var END   = new Date(2026, 11, 31, 23, 59);
 
 var AJ = 'https://elearning.aljazeera.net/ar/courses/';
 var AJP = 'https://institute.aljazeera.net/sites/default/files/';
+var OD = 'https://moomken-my.sharepoint.com/personal/a_abukhutwah_moomken_org/Documents/Dania%20Library/';   /* Dania Library folder in Ayman's Moomken OneDrive (shared with Dania) */
 
 var TAGS = {
   ccc: { l: 'Creative Copywriter', c: 'tag-ccc' },
@@ -149,7 +150,7 @@ var CHAPTERS = [
 var SHELVES = [
   { id: 'free', ar: 'اقرئي الآن — أدلّة مجانية كاملة (PDF)', en: 'Al Jazeera Media Institute · Free' },
   { id: 'own',  ar: 'كتبٌ عربية مرافقة للدورتين', en: 'Companion Books · Arabic' },
-  { id: 'kit',  ar: 'مواد دورتك', en: 'Your Course Kit' }
+  { id: 'kit',  ar: 'مواد دورتك — على OneDrive ممكن', en: 'Your Course Kit · OneDrive' }
 ];
 
 var BOOKS = [
@@ -216,9 +217,9 @@ var BOOKS = [
 
   /* the course kit she already has */
   { id: 'wb', s: 'kit', t: 'Creative Copywriter Workbook', a: 'ilovecreatives', c: '#2E5BFF', h: 230, w: 62, fs: 13, lat: 1,
-    d: 'دفتر تمارين الدورة — ستحتاجينه في كل درس من القسمين 1 و2.', note: 'في مجلد الدورة: ccc-workbook.pdf' },
+    d: 'دفتر تمارين الدورة — ستحتاجينه في كل درس من القسمين 1 و2.', note: 'على OneDrive ممكن · مجلد Dania Library', url: OD + '09-Creative-Copywriter-Workbook.pdf', od: 1 },
   { id: 'pv', s: 'kit', t: 'Passive Voice Cheat Sheet', a: 'ilovecreatives', c: '#F2C46D', fg: '#1F2635', h: 170, w: 44, fs: 12, lat: 1,
-    d: 'ورقة مرجعية سريعة لتجنّب المبني للمجهول — علّقيها قرب مكتبك.', note: 'في مجلد الدورة: Passive Voice Cheat Sheet.png' },
+    d: 'ورقة مرجعية سريعة لتجنّب المبني للمجهول — علّقيها قرب مكتبك.', note: 'على OneDrive ممكن · مجلد Dania Library', url: OD + '10-Passive-Voice-Cheat-Sheet.png', od: 1 },
   { id: 'sfsk', s: 'kit', t: 'Strategy Finishing School', a: 'Julian Cole', c: '#6E3A50', h: 236, w: 64, fs: 13, lat: 1,
     d: 'وحدات الاستراتيجية — نستخدم منها في هذا الموسم: 01 · 02 · 03 · 04 · 05 · 06 · 09 · 11 · 14 (+ قالب 17).', note: 'في مجلد الدورة (قيد التحميل)' }
 ];
@@ -793,7 +794,7 @@ function peekBook(id, mark) {
   if (mark) { var n = document.querySelector('[data-bk="' + id + '"]'); if (n) { n.classList.add('peek'); n.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' }); } }
   var ch = b.ch ? CHAPTERS.filter(function (c) { return c.n === b.ch && !c.prologue; })[0] : null;
   var action = b.url
-    ? '<a class="btn ' + (b.pdf ? 'btn-gold' : 'btn-ink') + ' btn-sm" href="' + esc(b.url) + '" target="_blank" rel="noopener">' + (b.pdf ? '📖 اقرئي الآن (PDF)' : '🔎 صفحة الكتاب') + '</a>'
+    ? '<a class="btn ' + (b.pdf ? 'btn-gold' : 'btn-ink') + ' btn-sm" href="' + esc(b.url) + '" target="_blank" rel="noopener">' + (b.pdf ? '📖 اقرئي الآن (PDF)' : b.od ? '📁 افتحيه من OneDrive' : '🔎 صفحة الكتاب') + '</a>'
     : '<span class="tag tag-kind">' + esc(b.note || '') + '</span>';
   $('#bookPeek').innerHTML =
     '<div class="peek-card">' +
