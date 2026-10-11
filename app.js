@@ -26,7 +26,7 @@ var OD = 'https://moomken-my.sharepoint.com/personal/a_abukhutwah_moomken_org/Do
 var TAGS = {
   ccc: { l: 'Creative Copywriter', c: 'tag-ccc' },
   sfs: { l: 'Strategy School',     c: 'tag-sfs' },
-  ar:  { l: 'رفيق عربي مجاني',     c: 'tag-ar' },
+  ar:  { l: 'رفيق عربي',     c: 'tag-ar' },
   mm:  { l: 'تطبيق على ممكن',      c: 'tag-moomken' }
 };
 var KIND = {
@@ -149,7 +149,7 @@ var CHAPTERS = [
 /* ---------- the library ---------- */
 var SHELVES = [
   { id: 'free', ar: 'الأدلّة الأساسية — اضغطي واقرئي', en: 'Core Guides · PDF' },
-  { id: 'hin',  ar: 'كتبٌ عربية كاملة — مجانية من مؤسسة هنداوي', en: 'Hindawi Books · PDF' },
+  { id: 'hin',  ar: 'كتبٌ عربية كاملة — من إصدارات مؤسسة هنداوي', en: 'Hindawi Books · PDF' },
   { id: 'own',  ar: 'أدلّة مرافقة — للتعمّق', en: 'Companion Guides · PDF' },
   { id: 'kit',  ar: 'مواد دورتك', en: 'Your Course Kit · PDF' }
 ];
@@ -237,30 +237,30 @@ var FREE = [
 /* ---------- later shelf: complementary skills (not now) ---------- */
 var LATER = [
   { h: '📷 التصوير والسرد البصري', items: [
-    { t: 'من العين إلى العدسة.. أساسيات التصوير الفوتوغرافي', s: 'معهد الجزيرة · 170 دقيقة · مجاني', l: 'ar', url: AJ + 'course-1933' },
-    { t: 'صحافة الهاتف المحمول', s: 'معهد الجزيرة · تصوير ومونتاج بالهاتف · مجاني', l: 'ar', url: AJ + 'course-76' }
+    { t: 'من العين إلى العدسة.. أساسيات التصوير الفوتوغرافي', s: 'معهد الجزيرة · 170 دقيقة', l: 'ar', url: AJ + 'course-1933' },
+    { t: 'صحافة الهاتف المحمول', s: 'معهد الجزيرة · تصوير ومونتاج بالهاتف', l: 'ar', url: AJ + 'course-76' }
   ] },
   { h: '🎬 المونتاج وصناعة الفيديو', items: [
-    { t: 'المونتاج.. رؤية تقنية وإبداعية', s: 'معهد الجزيرة · 67 دقيقة · مجاني', l: 'ar', url: AJ + 'course-86' },
-    { t: 'وثائقي الهاتف المحمول', s: 'معهد الجزيرة · الفكرة والسكربت والمونتاج · مجاني', l: 'ar', url: AJ + 'course-61' },
-    { t: 'DaVinci Resolve — التدريب الرسمي', s: 'Blackmagic Design · كتب ودروس فيديو مجانية', l: 'en', url: 'https://www.blackmagicdesign.com/products/davinciresolve/training' }
+    { t: 'المونتاج.. رؤية تقنية وإبداعية', s: 'معهد الجزيرة · 67 دقيقة', l: 'ar', url: AJ + 'course-86' },
+    { t: 'وثائقي الهاتف المحمول', s: 'معهد الجزيرة · الفكرة والسكربت والمونتاج', l: 'ar', url: AJ + 'course-61' },
+    { t: 'DaVinci Resolve — التدريب الرسمي', s: 'Blackmagic Design · كتب ودروس فيديو', l: 'en', url: 'https://www.blackmagicdesign.com/products/davinciresolve/training' }
   ] },
   { h: '🎨 التصميم الجرافيكي', items: [
-    { t: 'فوتوشوب — مبتدئ', s: 'معهد الجزيرة · مجاني', l: 'ar', url: AJ + 'course-83' },
-    { t: 'كيف تعالج الصور بفوتوشوب؟', s: 'معهد الجزيرة · مجاني', l: 'ar', url: AJ + 'course-1549' }
+    { t: 'فوتوشوب — مبتدئ', s: 'معهد الجزيرة', l: 'ar', url: AJ + 'course-83' },
+    { t: 'كيف تعالج الصور بفوتوشوب؟', s: 'معهد الجزيرة', l: 'ar', url: AJ + 'course-1549' }
   ] },
   { h: '🎙️ الإلقاء والحضور', items: [
-    { t: 'معارف إعلامية — ومنها سلسلة «بلسان فصيح»', s: 'معهد الجزيرة · فيديوهات قصيرة مجانية', l: 'ar', url: 'https://institute.aljazeera.net/ar/media-tips' },
+    { t: 'معارف إعلامية — ومنها سلسلة «بلسان فصيح»', s: 'معهد الجزيرة · فيديوهات قصيرة', l: 'ar', url: 'https://institute.aljazeera.net/ar/media-tips' },
     { t: 'مهارات الاتصال', s: 'منصة إدراك', l: 'ar', url: 'https://www.edraak.org/programs/course/comm-vt1_2018/' }
   ] },
   { h: '🧭 الاستراتيجية والتفكير', items: [
-    { t: 'مكتبة Strategy Finishing School المجانية + بودكاست Starting In Strategy', s: 'Julian Cole · مقالات وتمارين مجانية', l: 'en', url: 'https://strategyfinishingschool.com/' },
-    { t: 'Field Guide to Human-Centered Design', s: 'IDEO.org · دليل التفكير التصميمي (PDF مجاني)', l: 'en', url: 'https://www.designkit.org/resources/1.html' }
+    { t: 'مكتبة Strategy Finishing School المفتوحة + بودكاست Starting In Strategy', s: 'Julian Cole · مقالات وتمارين', l: 'en', url: 'https://strategyfinishingschool.com/' },
+    { t: 'Field Guide to Human-Centered Design', s: 'IDEO.org · دليل التفكير التصميمي (PDF)', l: 'en', url: 'https://www.designkit.org/resources/1.html' }
   ] },
   { h: '✍️ الكتابة والإنجليزية المهنية', items: [
-    { t: 'English for Journalism', s: 'University of Pennsylvania · Coursera · مجاني بالكامل', l: 'en', url: 'https://www.coursera.org/learn/journalism' },
-    { t: 'Copywriting 101', s: 'Copyblogger · كتاب ومقالات مجانية', l: 'en', url: 'https://copyblogger.com/copywriting-101/' },
-    { t: 'Content Marketing Certification', s: 'HubSpot Academy · مجاني مع شهادة', l: 'en', url: 'https://academy.hubspot.com/content-marketing-training' }
+    { t: 'English for Journalism', s: 'University of Pennsylvania · Coursera', l: 'en', url: 'https://www.coursera.org/learn/journalism' },
+    { t: 'Copywriting 101', s: 'Copyblogger · كتاب ومقالات', l: 'en', url: 'https://copyblogger.com/copywriting-101/' },
+    { t: 'Content Marketing Certification', s: 'HubSpot Academy · مع شهادة', l: 'en', url: 'https://academy.hubspot.com/content-marketing-training' }
   ] }
 ];
 
@@ -617,7 +617,7 @@ function renderChapters(C) {
           (t.m && t.c !== 'mm' ? '<span class="tag tag-moomken">تطبيق على ممكن</span>' : '') +
           '<span class="tag tag-kind">' + (KIND[t.k] || '') + '</span>' +
           (t.w ? '<span class="tag tag-wk">W' + t.w + '</span>' : '') +
-          (t.url ? '<a class="t-link" href="' + esc(t.url) + '" target="_blank" rel="noopener">افتحي الدورة المجانية ↗</a>' : '') +
+          (t.url ? '<a class="t-link" href="' + esc(t.url) + '" target="_blank" rel="noopener">افتحي الدورة ↗</a>' : '') +
           (safeUrl(link) ? '<a class="t-link" href="' + esc(safeUrl(link)) + '" target="_blank" rel="noopener">📎 العمل المرفق</a>' : '') +
           '</div>' + sub + '</div>' +
         '<div class="t-act"><span class="t-state st-' + st + '">' + (st === 'done' ? 'تمّ ✦' : st === 'pending' ? 'قيد المراجعة' : 'لم تبدأ') + '</span>' + acts + '</div>' +
@@ -801,7 +801,7 @@ function peekBook(id, mark) {
       '<div><h4>' + esc(b.t) + '</h4><div class="pa">' + esc(b.a) + '</div>' +
       '<p>' + esc(b.d) + '</p>' +
       '<div class="pk">' + action + (ch ? '<span class="tag tag-ar">رفيق الفصل ' + ch.n + ' · ' + esc(ch.name) + '</span>' : '') +
-        (b.s === 'hin' ? '<span class="tag tag-kind">مجاني · مؤسسة هنداوي</span>' : b.s !== 'kit' ? '<span class="tag tag-kind">مجاني · معهد الجزيرة للإعلام</span>' : '') + '</div></div>' +
+        (b.s === 'hin' ? '<span class="tag tag-kind">من إصدارات مؤسسة هنداوي</span>' : b.s !== 'kit' ? '<span class="tag tag-kind">من إصدارات معهد الجزيرة للإعلام</span>' : '') + '</div></div>' +
     '</div>';
 }
 
@@ -812,7 +812,7 @@ function renderFree() {
     var ch = CHAPTERS.filter(function (c) { return c.n === f.ch && !c.prologue; })[0];
     return '<a class="fc rv" href="' + esc(f.url) + '" target="_blank" rel="noopener">' +
       '<div class="fc-top"><span class="fc-ch">الفصل ' + f.ch + ' · ' + esc(ch ? ch.name : '') + '</span><span class="fc-min">' + f.min + ' min</span></div>' +
-      '<h4>' + esc(f.t) + '</h4><p>' + esc(f.d) + '</p><span class="fc-go">ابدئي الدورة مجانًا ↗</span></a>';
+      '<h4>' + esc(f.t) + '</h4><p>' + esc(f.d) + '</p><span class="fc-go">ابدئي الدورة ↗</span></a>';
   }).join('');
 }
 
