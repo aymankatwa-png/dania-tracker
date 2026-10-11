@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E1726">
+<title>دفتر دانية — على الهواء · المركز الإعلامي — ممكن</title>
+<meta name="description" content="متتبّع رحلة دانية في الكتابة الإعلانية والاستراتيجية — المركز الإعلامي، منظمة ممكن للتوعية والإعلام. أكتوبر – ديسمبر 2026.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- ============ role picker ============ -->
+<div class="veil hidden" id="rolePicker">
+  <div class="veil-card">
+    <div class="veil-avatar"><img src="assets/dania-sticker-sm.webp" alt="دانية"></div>
+    <h2>مَن على الهواء الآن؟</h2>
+    <p>الإجابة تُحفَظ على هذا الجهاز فقط — ويمكنك تغييرها في أي وقت.</p>
+    <div class="pick-row">
+      <button class="btn btn-gold" data-role="dania">أنا دانية 🎙️</button>
+      <button class="btn btn-ink" data-role="manager">أنا المشرف</button>
+    </div>
+    <div class="pin-row hidden" id="pinRow">
+      <input id="pinInput" inputmode="numeric" maxlength="6" placeholder="رمز المشرف" dir="ltr" autocomplete="off">
+      <button class="btn btn-ink btn-sm" id="pinGo">دخول</button>
+      <div class="pin-err hidden" id="pinErr">الرمز غير صحيح — حاول مجددًا.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ sync bar ============ -->
+<div class="syncbar">
+  <div class="syncbar-in">
+    <span class="dot" id="syncDot"></span>
+    <span class="sync-txt" id="syncTxt">حفظ محلي فقط</span>
+    <span class="grow"></span>
+    <span class="role-badge" id="roleBadge">—</span>
+    <button class="btn btn-ghost-l btn-xs" id="btnSwitchRole">تبديل</button>
+    <button class="btn btn-gold btn-xs" id="btnSyncNow">مزامنة الآن</button>
+    <button class="btn btn-ghost-l btn-xs" id="btnSetup">إعدادات الحفظ</button>
+  </div>
+  <div class="setup hidden" id="setupPanel">
+    <div class="setup-in">
+      <div class="field"><label>GitHub Gist ID</label><input id="inGist" placeholder="a1b2c3d4…" autocomplete="off" spellcheck="false" dir="ltr"></div>
+      <div class="field"><label>GitHub Token · gist scope</label><input id="inToken" type="password" placeholder="ghp_…" autocomplete="off" dir="ltr"></div>
+      <div class="field narrow"><label>اسم الملف داخل الـ Gist</label><input id="inFile" dir="ltr"></div>
+      <button class="btn btn-gold btn-sm" id="btnSaveSetup">حفظ وربط</button>
+      <div class="setup-note">أدخلي القيم الثلاث كما وصلتك في رسالة المشرف، ثم «حفظ وربط» — يتحوّل المؤشر إلى «متزامن» ويُحفظ تقدّمك على كل أجهزتك.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ hero: the studio ============ -->
+<header class="hero">
+  <div class="hero-light" aria-hidden="true"></div>
+  <div class="hero-dust" id="dust" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="brandmark">
+        <img src="assets/logo-white.png" alt="ممكن">
+        <div class="bm-txt">Moomken Media Center<br>Tripoli · Libya</div>
+      </div>
+      <div class="onair" id="onAir" title="على الهواء"><span class="onair-dot"></span>ON AIR</div>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="kicker">موسم الخريف · Oct — Dec 2026</div>
+        <h1 class="hero-title">الكتابُ الذي <span class="gold">فُتِح</span><br>يا دانية</h1>
+        <p class="hero-sub">
+          قلتِ إنّ الجلسة كانت «كفتح كتابٍ تراكم عليه الغبار». هذا الدفتر هو ذلك الكتاب: <b>ستة فصول</b> في اثني عشر أسبوعًا،
+          تبني فيها دانية الكاتبةَ الإعلانية التي تصنع الفكرة، وتكتبها، ثم تقف بها <b>على المنصّة</b>.
+          كلُّ مهمة تُنجزينها صفحةٌ تُكتَب — وكلُّ فصلٍ يكتمل يُضيء ضوءًا جديدًا على المسرح.
+        </p>
+        <blockquote class="her-line">
+          ”لم أعد أريد أن أكتفي بالتخطيط للشخص الذي أريد أن أصبحه… أريد أن أبدأ فعلًا في بنائه.“
+          <cite>— دانية</cite>
+        </blockquote>
+        <div class="stats" id="stats"></div>
+      </div>
+
+      <div class="hero-stage">
+        <div class="lanyard" aria-hidden="true"></div>
+        <div class="badge-swing">
+          <div class="press" id="pressBadge">
+            <div class="press-top"><span>PRESS</span><span class="press-ar">بطاقة صحفية</span></div>
+            <div class="press-photo" id="heroPortrait">
+              <img src="assets/dania-sticker.webp" alt="دانية" class="press-img">
+            </div>
+            <div class="press-name">دانية</div>
+            <div class="press-role">Copywriter · كاتبة محتوى</div>
+            <div class="press-org">Moomken Media Center</div>
+            <div class="press-foot">
+              <span class="barcode" aria-hidden="true"></span>
+              <span class="press-valid">VALID THRU<br><b>31 · 12 · 2026</b></span>
+            </div>
+          </div>
+        </div>
+        <div class="bubble" id="bubble"><span id="bubbleTxt"></span><span class="caret"></span></div>
+        <div class="vu" id="vu"></div>
+      </div>
+    </div>
+
+    <!-- this week -->
+    <div class="week-card" id="weekCard"></div>
+  </div>
+</header>
+
+<!-- ============ run of show: 12 weeks ============ -->
+<section class="sec wrap" id="runSec">
+  <div class="sec-head rv"><h2>جدول البثّ</h2><span class="en">Run of Show · 12 Weeks</span></div>
+  <p class="sec-lead rv">من الأحد 11 أكتوبر حتى الخميس 31 ديسمبر 2026. أسبوعٌ مضيء = أنتِ هنا. لا داعي للعجلة — فصلٌ واحد كل أسبوعين يكفي.</p>
+  <div class="runshow rv" id="runShow"></div>
+</section>
+
+<!-- ============ the stage rig (map) ============ -->
+<section class="rig-sec" id="mapSec">
+  <div class="wrap">
+    <div class="sec-head rv light"><h2>أضواء المسرح</h2><span class="en">The Lighting Rig</span></div>
+    <p class="sec-lead rv light">كلّ فصلٍ يكتمل يُشعل ضوءَه. صورتك تقف تحت الفصل الذي تعملين عليه الآن — اضغطي أي ضوء للانتقال إلى فصله.</p>
+  </div>
+  <div class="rig-scroll">
+    <div class="rig" id="rig"></div>
+  </div>
+</section>
+
+<!-- ============ manager panel ============ -->
+<section class="sec wrap hidden" id="mgrSec">
+  <div class="mgr rv" id="mgrPanel"></div>
+</section>
+
+<!-- ============ chapters ============ -->
+<section class="sec wrap">
+  <div class="sec-head rv"><h2>فصول الكتاب</h2><span class="en">Six Chapters · Two Courses</span></div>
+  <p class="sec-lead rv">
+    أشِّري على المهمة متى أنجزتِها → تصبح <b class="amber">قيد المراجعة</b> → فإذا اعتمدها المشرف خُتمت بـ<b class="goldtxt">«نُشِر»</b>.
+    في التمارين والمشاريع يمكنك إرفاق رابط عملك (Google Docs أو Drive) ليراه المشرف مباشرة.
+  </p>
+  <div class="legend rv">
+    <span class="lg"><i class="cb cb-ccc"></i> Creative Copywriter Course</span>
+    <span class="lg"><i class="cb cb-sfs"></i> Strategy Finishing School</span>
+    <span class="lg"><i class="cb cb-ar"></i> رفيق عربي مجاني</span>
+    <span class="lg"><i class="cb cb-moomken"></i> تطبيق على عمل ممكن</span>
+  </div>
+  <div class="chapters" id="chapters"></div>
+</section>
+
+<!-- ============ the library (bookshelf) ============ -->
+<section class="lib-sec" id="libSec">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>مكتبة دانية</h2><span class="en">The Library</span></div>
+    <p class="sec-lead rv">
+      مرّري المؤشّر على أي كتاب ليخرج من الرفّ — واضغطي عليه لتفتحيه.
+      <b>الرفّ العلوي</b> أدلّةٌ عربية مجانية كاملة (PDF) من معهد الجزيرة للإعلام، تُقرأ فورًا.
+      <b>الرفّ الأوسط</b> كتبٌ عربية مرافقة للدورتين — الضغط عليها يأخذك إلى صفحة الكتاب لاقتنائه.
+    </p>
+  </div>
+  <div class="bookcase rv" id="bookcase"></div>
+  <div class="wrap peek-sticky">
+    <div class="book-peek" id="bookPeek" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ free arabic courses ============ -->
+<section class="sec wrap" id="freeSec">
+  <div class="sec-head rv"><h2>دورات مجانية بالعربية</h2><span class="en">Free Arabic Courses</span></div>
+  <p class="sec-lead rv">
+    كلها من منصة معهد الجزيرة للتعليم الإلكتروني: المشاهدة والقراءة والاختبارات <b>مجانية بالكامل</b>
+    (الشهادة وحدها اختيارية ومدفوعة — لستِ بحاجة إليها). كلٌّ منها مربوط بفصلٍ من فصولك.
+  </p>
+  <div class="freecourses" id="freeCourses"></div>
+</section>
+
+<!-- ============ the finale (single gift) ============ -->
+<section class="sec wrap" id="finaleSec">
+  <div class="finale rv" id="finale"></div>
+</section>
+
+<!-- ============ later shelf (complementary) ============ -->
+<section class="sec wrap" id="laterSec">
+  <details class="later rv">
+    <summary>
+      <span class="later-ic">✦</span>
+      <span>
+        <b>رفّ «لاحقًا» — مهارات مكمّلة</b>
+        <small>التصميم، التصوير، المونتاج، الإلقاء… مصادر مجانية تنتظرك <u>بعد</u> هذا الموسم. ليست مطلوبة الآن — التركيز الآن على الكتابة.</small>
+      </span>
+      <span class="later-arrow">⌄</span>
+    </summary>
+    <div class="later-body" id="laterBody"></div>
+  </details>
+</section>
+
+<!-- ============ the promise ============ -->
+<section class="sec wrap" id="promiseSec">
+  <div class="promise rv">
+    <div class="promise-light" aria-hidden="true"></div>
+    <div class="promise-kicker">الصفحة الأخيرة · The Last Page</div>
+    <span class="qmark" aria-hidden="true">”</span>
+    <h2>كنتُ أظنّ أنّ التأثير يعني الظهور…<br>ثم عرفتُ أنه قد يكون <span class="gold">فكرةً غيّرتُها</span> في رأس أحدهم.</h2>
+    <p>
+      هذا بالضبط ما تفعله الكاتبة الإعلانية في منظمةٍ للتوعية: كلمةٌ تُغيّر نظرة، وجملةٌ تجعل إنسانًا يرى نفسه بطريقةٍ أفضل.
+      في نهاية ديسمبر لن تقفي على المنصّة لأنّ أحدًا صفّق — بل لأنك كتبتِ شيئًا يستحق أن يُسمع.
+    </p>
+    <div class="promise-sign">
+      <span class="sig">دانية</span>
+      <span class="sig-line">ما زال فينا متّسعٌ للحلم ✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ footer ============ -->
+<footer class="foot">
+  <div class="wrap foot-in">
+    <img src="assets/logo-white.png" alt="ممكن">
+    <div class="f-txt">
+      المركز الإعلامي — منظمة ممكن للتوعية والإعلام · طرابلس، ليبيا<br>
+      <span class="f-en">EVERYTHING IS MOOMKEN — كل شيء ممكن</span><br>
+      <span class="f-ref">✦ هذا الدفتر بُني على ما كتبتِه بنفسك: «أنا وأنا» وخريطة المهارات التي أرسلتِها — باتفاقٍ بيننا.</span>
+    </div>
+    <div class="f-en f-courses">Creative Copywriter Course — ilovecreatives · Strategy Finishing School — Julian Cole</div>
+  </div>
+</footer>
+
+<canvas id="confetti"></canvas>
+<div class="toasts" id="toasts"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
